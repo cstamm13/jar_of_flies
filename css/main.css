@@ -62,10 +62,6 @@ h1, h2, h3, h4, h5, h6,
     color: #252525;
 }
 
-main > heading {
-    margin: 700px 0;
-}
-
 main > section {
     padding: 70px 0;
 }
@@ -77,8 +73,8 @@ main > section {
     text-transform: uppercase;
 }
 
-.btn-blue {
-    background-color: rgba(0,158,227, 0.78);
+.btn-gray {
+    background-color: #333;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -90,14 +86,11 @@ main > section {
     padding: 12px 35px;
 }
 
-.bg-blue {
-    background-color: #009EE3;
-}
-
 /* Sweep To Right */
 .btn-effect {
 	vertical-align: middle;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    
 	position: relative;
 	display: inline-block;
 
@@ -132,7 +125,7 @@ main > section {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #fff;
+	background: #444;
 	
 	-webkit-transform: scaleX(0);
 	   -moz-transform: scaleX(0);
@@ -162,9 +155,12 @@ main > section {
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
 	color: #009EE3;
+    background-color: #333;
+
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
+    background-color: #666;
 	-webkit-transform: scaleX(1);
 	   -moz-transform: scaleX(1);
 	    -ms-transform: scaleX(1);
@@ -217,16 +213,16 @@ main > section {
 /*	Preloader
 /* ==========================================*/
 
-#preloader {
+/*#preloader {
     background-color: #fff;
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 9999;
-}
+}*/
 
 /*Battery*/
-.loder-box {
+/*.loder-box {
   background-color: rgba(0, 0, 0, 0.02);
   border-radius: 1px;
   height: 100px;
@@ -276,7 +272,7 @@ main > section {
     0%{box-shadow: inset 0px 0px 0px #2E2E2E;}
     100%{box-shadow: inset 60px 0px 0px #2E2E2E;}
 }
-
+*/
 
 
 
@@ -317,15 +313,26 @@ h1.navbar-brand {
 #heading {
     background: url(../images/band.jpg) no-repeat center center;
     width: 100%;
-      position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 750px;
+    background-size: cover;
+}
+
+#heading h2 {
+    font-family: 'aic';
+    color: #dd2914;
 }
 
 .navbar-header {
     height: 100%;
+}
+
+.section-heading, .social-section-heading {
+    color: #d4d4d4; /*#e6e6e6;*/
 }
 
 
@@ -480,7 +487,7 @@ h1.navbar-brand {
     height: 100%;
 }
 
-/* Default styles for background colors
+/* Default styles for background colors 
 
 .btn-effect:after {
     width: 0%;
@@ -497,7 +504,7 @@ h1.navbar-brand {
         -ms-transition: all 0.3s ease-out 0s;
          -o-transition: all 0.3s ease-out 0s;
             transition: all 0.3s ease-out 0s;
-}
+}*/
 
 .btn-effect:hover,
 .btn-effect:active {
@@ -507,7 +514,7 @@ h1.navbar-brand {
 .btn-effect:hover:after,
 .btn-effect:active:after {
     width: 100%;
-} */
+} 
 
 
 /* Project laughtbox setup */
@@ -539,8 +546,9 @@ h1.navbar-brand {
 ==================================================================*/
 
 #about {
-    background-color: #222222;
+    background-color: #1b1c1c;
     color: #fff;
+    margin-top: -50px;
 }
 
 #about h3 {
@@ -1465,5 +1473,192 @@ textarea.form-control {
 /* footer */
     .footer-content {
         width: 380px;
+    }
+}
+
+
+
+
+
+/* Events list */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+#events {
+    background-color: #dadde6;
+    font-family: arial
+    width:  100%;
+}
+
+.fl-left {
+    float: left
+}
+
+.fl-right {
+    float: right
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    border-left: 10px solid #fec500;
+    padding-left: 10px;
+    margin-bottom: 30px
+}
+
+.row {
+    overflow: hidden
+}
+
+.card {
+    display: table-row;
+    width: 49%;
+    background-color: #fff;
+    color: #989898;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+    position: relative
+}
+
+.card+.card {
+    margin-left: 2%
+}
+
+.date {
+    display: table-cell;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    border-right: 2px dashed #dadde6
+}
+
+.date:before,
+.date:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #DADDE6;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    z-index: 1;
+    border-radius: 50%
+}
+
+.date:after {
+    top: auto;
+    bottom: -15px
+}
+
+.date time {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.date time span {
+    display: block
+}
+
+.date time span:first-child {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 250%
+}
+
+.date time span:last-child {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: -10px
+}
+
+.card-cont {
+    display: table-cell;
+    width: 75%;
+    font-size: 85%;
+    padding: 10px 10px 30px 50px
+}
+
+.card-cont h3 {
+    color: #3C3C3C;
+    font-size: 130%
+}
+
+.row:last-child .card:last-of-type .card-cont h3 {
+    text-decoration: line-through
+}
+
+.card-cont>div {
+    display: table-row
+}
+
+.card-cont .even-date i,
+.card-cont .even-info i,
+.card-cont .even-date time,
+.card-cont .even-info p {
+    display: table-cell
+}
+
+.card-cont .even-date i,
+.card-cont .even-info i {
+    padding: 5% 5% 0 0
+}
+
+.card-cont .even-info p {
+    padding: 30px 50px 0 0
+}
+
+.card-cont .even-date time span {
+    display: block
+}
+
+.card-cont a {
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    background-color: #D8DDE0;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px
+}
+
+.row:last-child .card:first-child .card-cont a {
+    background-color: #037FDD
+}
+
+.row:last-child .card:last-child .card-cont a {
+    background-color: #F8504C
+}
+
+@media screen and (max-width: 860px) {
+    .card {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-bottom: 10px
+    }
+    .card+.card {
+        margin-left: 0
+    }
+    .card-cont .even-date,
+    .card-cont .even-info {
+        font-size: 75%
     }
 }
