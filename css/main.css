@@ -1061,21 +1061,6 @@ textarea.form-control {
     margin-left: 24px;
 }
 
-
-/*============================================================
-	Google Maps
-==============================================================*/
-
-#google-map {
-    padding: 0;
-}
-
-#map-canvas {
-    width: 100%;
-    height: 300px;
-}
-
-
 /*============================================================
 	Footer
 ==============================================================*/
@@ -1712,5 +1697,9 @@ margin-right: auto;
   bottom: 20px;
   right: 20px;
   box-sizing: border-box
-  /*display: none;*/
+}
+
+#contact {
+    background-color: #1b1c1c;
+    /*width: 100%;*/
 }
