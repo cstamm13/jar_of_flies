@@ -80,6 +80,28 @@ main > section {
     color: #fff;
 }
 
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-scroll {
+    background-color: #333;
+    color: #666;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 5px; 
+  border-radius: 4px;
+}
+
 .btn-border {
     border: 2px solid #fff;
     color: #fff;
@@ -153,10 +175,11 @@ main > section {
 			transition-timing-function: ease-out;
 }
 
-.btn-effect:hover, .btn-effect:focus, .btn-effect:active, button:hover, button:focus, button:active {
-	color: #fff; /*#009EE3;*/
+.btn-effect:hover, .btn-effect:focus, .btn-effect:active, 
+button:hover, button:focus, button:active,
+.btn-scroll:hover, .btn-scroll:focus  {
+	color: #fff;
     background-color: #333;
-
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -1682,4 +1705,12 @@ margin-right: auto;
     .card-cont .even-info {
         font-size: 75%
     }
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-sizing: border-box
+  /*display: none;*/
 }
