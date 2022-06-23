@@ -117,7 +117,7 @@ main > section {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.btn-effect:before {
+.btn-effect:before, button:before {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -153,8 +153,8 @@ main > section {
 			transition-timing-function: ease-out;
 }
 
-.btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+.btn-effect:hover, .btn-effect:focus, .btn-effect:active, button:hover, button:focus, button:active {
+	color: #fff; /*#009EE3;*/
     background-color: #333;
 
 }
@@ -320,6 +320,8 @@ h1.navbar-brand {
     justify-content: space-between;
     height: 750px;
     background-size: cover;
+    /*width:100vw;*/
+    /*height:100vh;*/
 }
 
 #heading h2 {
@@ -1008,7 +1010,7 @@ textarea.form-control {
 }
 
 #submit:before {
-  background-color: #0A85BB;
+  background-color: #545454;
 }
 
 #submit.btn-effect:after {
