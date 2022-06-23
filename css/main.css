@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 main > section {
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .btn {
@@ -606,6 +606,10 @@ h1.navbar-brand {
 	Services
 ==================================================================*/
 
+#services {
+    background-color: #1b1c1c;
+    width: 100%;
+}
 .service-icon {
     border: 3px solid transparent;
     display: inline-block;
@@ -1126,23 +1130,23 @@ textarea.form-control {
             transform: translateX(30px);
 }
 
-.footer-content .footer-social {
+.footer-content .social {
     margin: 40px 0 35px;
 }
 
-.footer-social ul {
+.social ul {
     list-style: outside none none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.footer-social ul li {
+.social ul li {
     display: inline-block;
     margin: 0 10px;
 }
 
-.footer-social ul li a {
+.social ul li a {
     color: #7f7f7f;
     display: block;
     
@@ -1153,7 +1157,7 @@ textarea.form-control {
             transition: all 0.2s ease 0s;
 }
 
-.footer-social ul li a:hover {
+.social ul li a:hover {
     color: #009EE3;
 }
 
@@ -1488,12 +1492,6 @@ textarea.form-control {
     box-sizing: border-box
 }
 
-#events {
-    background-color: #dadde6;
-    font-family: arial
-    width:  100%;
-}
-
 .fl-left {
     float: left
 }
@@ -1505,9 +1503,21 @@ textarea.form-control {
 h1 {
     text-transform: uppercase;
     font-weight: 900;
-    border-left: 10px solid #fec500;
+    /*border-left: 10px solid #fec500;*/
     padding-left: 10px;
     margin-bottom: 30px
+}
+
+#events {
+    background-color: #222222;
+    font-family: arial
+    width:  100%;
+}
+
+#events h1 {
+    color: #fff;
+    background-color: #222222;
+
 }
 
 .row {
@@ -1515,20 +1525,30 @@ h1 {
 }
 
 .card {
-    display: table-row;
-    width: 49%;
+    /*display: table-row;*/
+    width: 85%;/*49%;*/
     background-color: #fff;
     color: #989898;
     margin-bottom: 10px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aic', sans-serif;
     text-transform: uppercase;
-    border-radius: 4px;
-    position: relative
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
 }
 
-.card+.card {
-    margin-left: 2%
+/*.card+.card {
+    margin: 0 auto;
 }
+section.card-cont {
+    width: 100%;
+margin: 0 auto;
+}
+article {
+    width: 100%;
+    margin-left: auto;
+margin-right: auto;
+}*/
 
 .date {
     display: table-cell;
@@ -1544,7 +1564,7 @@ h1 {
     display: block;
     width: 30px;
     height: 30px;
-    background-color: #DADDE6;
+    background-color: #222222;
     position: absolute;
     top: -15px;
     right: -15px;
