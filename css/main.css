@@ -791,7 +791,7 @@ ul.external li a:hover {
 
 
 #testimonials {
-    background-image: url(../img/parallax/testimonial.jpg);
+    /*background-image: url(../img/parallax/testimonial.jpg);*/
     padding: 0;
     color: #fff;
 }
@@ -825,7 +825,7 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:before {
-    background-image: url("../img/icons/quotes.png");
+    /*background-image: url("../img/icons/quotes.png");*/
     background-repeat: no-repeat;
     bottom: 127px;
     height: 33px;
@@ -835,7 +835,7 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:after {
-    background-image: url("../img/icons/quotes.png");
+    /*background-image: url("../img/icons/quotes.png");*/
     background-position: -58px 0;
     background-repeat: no-repeat;
     bottom: -50px;
@@ -1513,7 +1513,6 @@ textarea.form-control {
 h1 {
     text-transform: uppercase;
     font-weight: 900;
-    /*border-left: 10px solid #fec500;*/
     padding-left: 10px;
     margin-bottom: 30px
 }
@@ -1535,8 +1534,7 @@ h1 {
 }
 
 .card {
-    /*display: table-row;*/
-    width: 85%;/*49%;*/
+    width: 85%;
     background-color: #fff;
     color: #989898;
     margin-bottom: 10px;
@@ -1547,7 +1545,7 @@ h1 {
     margin: 0 auto;
 }
 
-/*.card+.card {
+.card+.card {
     margin: 0 auto;
 }
 section.card-cont {
@@ -1558,7 +1556,7 @@ article {
     width: 100%;
     margin-left: auto;
 margin-right: auto;
-}*/
+}
 
 .date {
     display: table-cell;
@@ -1703,3 +1701,19 @@ margin-right: auto;
     background-color: #1b1c1c;
     /*width: 100%;*/
 }
+
+
+
+
+
+
+
+
+
+/*.fl-left {
+    float: left
+}
+
+.fl-right {
+    float: right
+}*/

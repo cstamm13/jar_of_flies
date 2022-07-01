@@ -3,7 +3,7 @@
     <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
         <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
             <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-                <html lang="en">
+                <!-- <html lang="en"> -->
 
                 <head>
                     <meta charset="utf-8">
@@ -27,6 +27,41 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 
                     <script src="js/modernizr-2.6.2.min.js"></script>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<script src="js/calendar-api/main.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
+    <script> 
+    $(function(){
+      $("#includedContent").load("b.html"); 
+    });
+    </script> 
+<!-- <script>
+function start() {
+    console.log('starting')
+  // 2. Initialize the JavaScript client library.
+  gapi.client.init({
+    'apiKey': 'AIzaSyCTEdeiVvU1C8o8W2mb6sZMWeEftIAssyE',
+    // clientId and scope are optional if auth is not required.
+    // 'clientId': 'qg3gfj0fsikhg4jg7v5keqsaos@group.calendar.google.com',
+    // 'scope': 'profile',
+  }).then(function() {
+    console.log('starting here')
+    // 3. Initialize and make the API request.
+    return gapi.client.request({
+      // 'path': 'https://people.googleapis.com/v1/people/me?requestMask.includeField=person.names',
+        'path': 'https://www.googleapis.com/calendar/v3/calendars'
+
+    })
+  }).then(function(response) {
+    console.log(response.result);
+  }, function(reason) {
+    console.log('Error: ' + reason.result.error.message);
+  });
+};
+// 1. Load the JavaScript client library.
+gapi.load('client', start);
+</script> -->
+<!-- ////////////////////////////////////////////////////// -->
                 </head>
 
                 <body id="home">
@@ -97,45 +132,50 @@
 
 
 
+<p>Remember to restrict calendar API key to domain</p> <!-- https://console.cloud.google.com/apis/credentials?project=famous-empire-354318 -->
 
 
 
-
-    <section class="container" id="shows">
+    <section class="container">
         <h2 class="wow animated bounceInLeft text-center section-heading">Upcoming Shows</h2>
 
-        <div class="row">
-            <article class="card">
-                <section class="date">
-                    <time datetime="23th feb">
-                        <span>23</span><span>feb</span>
-                    </time>
-                </section>
+<div id="show"></div>
 
-                <section class="card-cont">
-                    <small>dj khaled</small>
-                    <h3>live in sydney</h3>
-                    <div class="even-date">
-                        <i class="fa fa-calendar"></i>
-                        <time>
-                            <span>wednesday 28 december 2014</span>
-                            <span>08:55pm to 12:00 am</span>
-                        </time>
-                    </div>
+
+<!-- html thingy starts here -->
+<!--     <div class="row">
+        <article class="card">
+            <section class="date">
+                <time datetime="Friday, July 15, 2022 at 8:00 PM">
+                    <span>5</span><span>Jul</span>
+                </time>
+            </section>
+            <section class="card-cont">
+                <small>jar of flies</small>
+                <h3>Test event extravaganza!</h3>
+                <div class="even-date">
+                    <i class="fa fa-calendar"></i>
+                    <time>
+                        <span>friday july 15 2022</span>
+                        <span>8:00 PM</span>
+                    </time>
+                </div>
+                    
                     <div class="even-info">
                         <i class="fa fa-map-marker"></i>
-                        <p>nexen square for people australia, sydney</p>
+                        <p>This is the one in the html</p>
                     </div>
                 </section>
             </article>
         </div>
-        <br>
+        </br> -->
+<!-- html thingy ends here -->
 
-        <div class="row">
+<!--         <div class="row">
             <article class="card">
                 <section class="date">
-                    <time datetime="23th feb">
-                        <span>23</span><span>feb</span>
+                    <time datetime="Wednesday, July 21, 2010 at 8:00 PM">
+                        <span>22</span><span>August</span>
                     </time>
                 </section>
                 <section class="card-cont">
@@ -156,7 +196,7 @@
             </article>
         </div>
         <br>
-
+ 
         <div class="row">
             <article class="card">
                 <section class="date">
@@ -205,14 +245,14 @@
                     </div>
                 </section>
             </article>
-        </div>
-    </div>
+        </div> -->
 </section>
 
+<!-- <div class="embed-responsive embed-responsive-16by9">
 
-
-
-
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showNav=0&showTitle=0&src=cWczZ2ZqMGZzaWtoZzRqZzd2NWtlcXNhb3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F09300" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+ -->
 
 
 
@@ -238,6 +278,62 @@
         </div>
     </div>
 </section> -->
+
+
+
+
+            <section id="testimonials" class="parallax">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="sec-title text-center white wow animated fadeInDown">
+                                <h2>What people say</h2>
+                            </div>
+
+                            <div id="testimonial" class=" wow animated fadeInUp">
+                                <div class="testimonial-item text-center">
+                                    <div class="clearfix">
+                                        
+                                        <p>My face began melting off immediately, and it was the bext experience in my life</p>
+                                        <span>Adoring Fan, probably</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item text-center">
+                                    <!-- <img src="img/member-1.jpg" alt="Our Clients"> -->
+                                    <div class="clearfix">
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        <span>Katty Flower</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item text-center">
+                                    <!-- <img src="img/member-1.jpg" alt="Our Clients"> -->
+                                    <div class="clearfix">
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        <span>Katty Flower</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -399,13 +495,15 @@ aria-hidden="true">
 
 
 
+<!-- 
 
 
+<script type="text/javascript">
+    document.getElementsByTagName("link"); for (var i = 0; i < links.length;i++) { var link = links[i]; if (link.rel === "stylesheet") {link.href += "?"; }}
+</script>
 
 
-
-
-
+ -->
 
 
 
