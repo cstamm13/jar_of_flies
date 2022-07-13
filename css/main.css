@@ -791,7 +791,6 @@ ul.external li a:hover {
 
 
 #testimonials {
-    background-image: url(../img/parallax/testimonial.jpg);
     padding: 0;
     color: #fff;
 }
@@ -825,7 +824,6 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:before {
-    background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
     bottom: 127px;
     height: 33px;
@@ -835,7 +833,6 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:after {
-    background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
     bottom: -50px;
@@ -867,105 +864,11 @@ ul.external li a:hover {
     color: #fff;
 }
 
-/*.price-table {
-    border: 1px solid #e3e3e3;
-}
-
-.price-table.featured {
-    -webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.19);
-       -moz-box-shadow: 0 4px 5px rgba(0,0,0,0.19);
-            box-shadow: 0 4px 5px rgba(0,0,0,0.19);
-}
-
-.price-table > span {
-    color: #252525;
-    display: block;
-    font-size: 24px;
-    padding: 30px 0;
-    text-transform: uppercase;
-}
-
-.price-table .value {
-    background-color: #f8f8f8;
-    color: #727272;
-    padding: 20px 0;
-
-    -webkit-transition: all 0.7s ease 0s;
-       -moz-transition: all 0.7s ease 0s;
-        -ms-transition: all 0.7s ease 0s;
-         -o-transition: all 0.7s ease 0s;
-            transition: all 0.7s ease 0s;
-}
-
-.price-table.featured .value {
-    background-color: #009EE3;
-    color: #fff;
-}
-
-.price-table .value span {
-    display: inline-block;
-}
-
-.price-table .value span:first-child {
-    font-size: 32px;
-    line-height: 32px;
-}
-
-.price-table .value span:nth-child(2) {
-    font-size: 65px;
-    line-height: 65px;
-    margin-bottom: 25px;
-}
-
-.price-table .value span:last-child {
-    font-size: 16px;
-}
-
-.price-table ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.price-table ul li {
-    border-top: 1px solid #e3e3e3;
-    display: block;
-    padding: 25px 0;
-
-    -webkit-transition: all 0.7s ease 0s;
-       -moz-transition: all 0.7s ease 0s;
-        -ms-transition: all 0.7s ease 0s;
-         -o-transition: all 0.7s ease 0s;
-            transition: all 0.7s ease 0s;
-}
-
-.price-table ul li a {
-    display: block;
-    text-transform: uppercase;
-}
-
-.price-table.featured ul li:last-child,
-.price-table ul li:last-child:hover {
-    background-color: #009EE3;
-}
-
-.price-table.featured ul li:last-child a,
-.price-table ul li:last-child:hover a {
-    color: #fff;
-}*/
-
-
-/*=================================================================
-	Price
-==================================================================*/
-
 #social {
     padding: 0;
 }
 
 #social .overlay {
-    /*background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;*/
     padding: 100px 0 120px;
 }
 
@@ -1489,10 +1392,6 @@ textarea.form-control {
     }
 }
 
-
-
-
-
 /* Events list */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 * {
@@ -1513,7 +1412,6 @@ textarea.form-control {
 h1 {
     text-transform: uppercase;
     font-weight: 900;
-    /*border-left: 10px solid #fec500;*/
     padding-left: 10px;
     margin-bottom: 30px
 }
@@ -1535,8 +1433,7 @@ h1 {
 }
 
 .card {
-    /*display: table-row;*/
-    width: 85%;/*49%;*/
+    width: 85%;
     background-color: #fff;
     color: #989898;
     margin-bottom: 10px;
@@ -1547,18 +1444,20 @@ h1 {
     margin: 0 auto;
 }
 
-/*.card+.card {
+.card+.card {
     margin: 0 auto;
 }
+
 section.card-cont {
     width: 100%;
-margin: 0 auto;
+    margin: 0 auto;
 }
+
 article {
     width: 100%;
     margin-left: auto;
-margin-right: auto;
-}*/
+    margin-right: auto;
+}
 
 .date {
     display: table-cell;
@@ -1622,7 +1521,8 @@ margin-right: auto;
 
 .card-cont h3 {
     color: #3C3C3C;
-    font-size: 130%
+    font-size: 130%;
+    font-family: "aic";
 }
 
 .row:last-child .card:last-of-type .card-cont h3 {
@@ -1656,16 +1556,17 @@ margin-right: auto;
 .card-cont a {
     display: block;
     text-decoration: none;
-    width: 80px;
+    width: 90px;
     height: 30px;
-    background-color: #D8DDE0;
+    background-color: #037FDD;
     color: #fff;
     text-align: center;
     line-height: 30px;
     border-radius: 2px;
     position: absolute;
     right: 10px;
-    bottom: 10px
+    bottom: 10px;
+    font-size: 10px;
 }
 
 .row:last-child .card:first-child .card-cont a {
@@ -1701,5 +1602,9 @@ margin-right: auto;
 
 #contact {
     background-color: #1b1c1c;
-    /*width: 100%;*/
+}
+
+
+.card {
+  display: flex;
 }
