@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -104,11 +104,9 @@ def lambda_handler(event, context):
     get_events()
 
     ticket_list = ''.join(TICKETS)
-    print(ticket_list)
     encoded_string = ticket_list.encode("utf-8")
     bucket_name = BUCKET
     file_name = "b.html"
     s3_path = S3_PATH + file_name
     s3 = boto3.resource("s3")
     s3.Bucket(bucket_name).put_object(Key=s3_path, Body=encoded_string)
-    
